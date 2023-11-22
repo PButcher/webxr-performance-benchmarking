@@ -23,7 +23,7 @@ export function InstancedCubes({ instances }: IInstancedCubes) {
   return (
     <instancedMesh ref={ref} args={[undefined, undefined, instances]}>
       <boxGeometry args={boxSize} />
-      <meshStandardMaterial />
+      <meshBasicMaterial />
     </instancedMesh>
   );
 }

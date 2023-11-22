@@ -13,7 +13,7 @@ export function NaiiveCubes({ instances }: INaiiveCubes) {
   const boxSize: DimensionsType = [1, 1, 1];
   const matrix = new THREE.Matrix4();
   const geometry = new THREE.BoxGeometry(...boxSize);
-  const material = new THREE.MeshStandardMaterial();
+  const material = new THREE.MeshBasicMaterial();
   const meshes: THREE.Mesh[] = [];
 
   for (let i = 0; i < instances; ++i) {
