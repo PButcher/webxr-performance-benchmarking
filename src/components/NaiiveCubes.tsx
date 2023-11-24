@@ -8,8 +8,6 @@ interface INaiiveCubes {
 }
 
 export function NaiiveCubes({ instances }: INaiiveCubes) {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-
   const boxSize: DimensionsType = [1, 1, 1];
   const matrix = new THREE.Matrix4();
   const geometry = new THREE.BoxGeometry(...boxSize);

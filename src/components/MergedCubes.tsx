@@ -8,7 +8,6 @@ interface IMergedCubes {
 }
 
 export function MergedCubes({ instances }: IMergedCubes) {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const boxSize: DimensionsType = [1, 1, 1];
   const matrix = new THREE.Matrix4();
   const material = new THREE.MeshBasicMaterial();

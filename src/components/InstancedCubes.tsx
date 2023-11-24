@@ -8,15 +8,14 @@ interface IInstancedCubes {
 }
 
 export function InstancedCubes({ instances }: IInstancedCubes) {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const ref = useRef<any>();
+  const ref = useRef<THREE.InstancedMesh>(null);
   const boxSize: DimensionsType = [1, 1, 1];
   const matrix = new THREE.Matrix4();
 
   useLayoutEffect(() => {
     for (let i = 0; i < instances; ++i) {
       randomiseMatrix(matrix);
-      ref.current.setMatrixAt(i, matrix);
+      ref.current!.setMatrixAt(i, matrix);
     }
   });
 
