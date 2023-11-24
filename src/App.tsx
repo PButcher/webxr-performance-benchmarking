@@ -36,7 +36,6 @@ function App() {
         <GetInfo />
         <XR>
           <OrbitControls />
-          <ambientLight />
           {method === "naiive" && <NaiiveCubes instances={instances} />}
           {method === "merged" && <MergedCubes instances={instances} />}
           {method === "instanced" && <InstancedCubes instances={instances} />}
