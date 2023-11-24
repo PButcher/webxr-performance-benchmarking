@@ -8,6 +8,15 @@ Renders `n` unlit 24-vertex cubes with [`react-three-fiber`](https://docs.pmnd.r
 
 ## Benchmarking Results
 
+Benchmarks were conducted on the following hardware:
+
+- Windows 11 Enterprise (21H2)
+- 12th Gen Intel Core i9-12900KF 3.19GHz
+- 32.0 GB RAM
+- NVIDIA GeForce RTX 3080 Ti
+- Valve Index HMD
+- Google Chrome 119
+
 ![WebXR Benchmarks](./webxr-benchmarks.svg)
 
 ## Install
