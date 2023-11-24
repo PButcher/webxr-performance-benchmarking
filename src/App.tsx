@@ -4,13 +4,10 @@ import { OrbitControls, Stats } from "@react-three/drei";
 import { NaiiveCubes, InstancedCubes, MergedCubes } from "./components";
 import { GetInfo } from "./utils";
 import { useState } from "react";
-// import { useDebounce } from "./hooks";
 
 function App() {
   const [method, setMethod] = useState("instanced");
   const [instances, setInstances] = useState(50000);
-  // const debouncedInstances = useDebounce(instances, 1000);
-  // const instances = 50000;
 
   return (
     <>
